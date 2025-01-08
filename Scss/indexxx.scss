@@ -60,11 +60,12 @@ img{
         border-radius: 20px;
         font-size: 70px;
         box-shadow: -5px 3px 4px #a1a1a1 ;
+        padding: 20px;
     }
     @media(max-width: 740px){
         .block1{
-            font-size: 20px;
-            padding: 10px;
+            font-size: 25px;
+            padding: 15px;
         }
     }
 }
@@ -76,20 +77,32 @@ img{
     .div1{
         width: 90%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px;
         @media(max-width: 740px){
             flex-dirtecion: column;
-            justify-content: flex-start;
+            justify-content: center;
             flex-wrap: wrap;  
+         .d1{
+            width: 45%;
+            font-size: 15px;
+         }
             
 
+        }
+        @media(max-width: 400px){
+            .b1{
+                width: 70%;
+            }
         }
        
         div{
             box-shadow: -5px 3px 4px #a1a1a1 ;
         border-radius: 24px;
         text-align: center;
-        margin: auto;
+        margin: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -116,21 +129,26 @@ img{
         padding: 30px;
         background-color: #E3E3E3;
         box-shadow: -5px 3px 4px #a1a1a1 ;
-
+        font-size: 35px;
         h1{
-            font-size: 50px;
+            // font-size: 50px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             position: relative;
             bottom: -40px;
         }
         p{
-            font-size: 23px;
+            // font-size: 23px;
             line-height: 1.4;
             
         }
         .p{
             text-shadow: 5px 5px 5px #000000 ;
             // text-shadow: 1px 1px 2px pink;
+        }
+    }
+    @media(max-width: 740px){
+        p{
+            font-size: 15px;
         }
     }
 }
@@ -147,5 +165,10 @@ footer{
     color:#5a5959;
     pre{
         font-size: 30px;
+    }
+    @media(max-width: 740px){
+        pre{
+            font-size: 15px
+        };
     }
 }

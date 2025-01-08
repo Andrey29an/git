@@ -102,11 +102,12 @@ header .img:active {
   font-size: 70px;
   -webkit-box-shadow: -5px 3px 4px #a1a1a1;
           box-shadow: -5px 3px 4px #a1a1a1;
+  padding: 20px;
 }
 @media (max-width: 740px) {
   .section1 .block1 {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 25px;
+    padding: 15px;
   }
 }
 
@@ -125,17 +126,34 @@ header .img:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px;
 }
 @media (max-width: 740px) {
   .block2 .div1 {
     flex-dirtecion: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .block2 .div1 .d1 {
+    width: 45%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .block2 .div1 .b1 {
+    width: 70%;
   }
 }
 .block2 .div1 div {
@@ -143,7 +161,7 @@ header .img:active {
           box-shadow: -5px 3px 4px #a1a1a1;
   border-radius: 24px;
   text-align: center;
-  margin: auto;
+  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,19 +211,23 @@ header .img:active {
   background-color: #E3E3E3;
   -webkit-box-shadow: -5px 3px 4px #a1a1a1;
           box-shadow: -5px 3px 4px #a1a1a1;
+  font-size: 35px;
 }
 .block3 .divvv h1 {
-  font-size: 50px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
   bottom: -40px;
 }
 .block3 .divvv p {
-  font-size: 23px;
   line-height: 1.4;
 }
 .block3 .divvv .p {
   text-shadow: 5px 5px 5px #000000;
+}
+@media (max-width: 740px) {
+  .block3 p {
+    font-size: 15px;
+  }
 }
 
 footer {
@@ -230,4 +252,9 @@ footer {
 }
 footer pre {
   font-size: 30px;
+}
+@media (max-width: 740px) {
+  footer pre {
+    font-size: 15px;
+  }
 }
