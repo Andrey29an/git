@@ -24,9 +24,11 @@ section .wizard {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 996px;
-  height: 426px;
   border-radius: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media (max-width: 650px) {
   section .wizard {
@@ -35,8 +37,6 @@ section .wizard {
   }
 }
 section .wizard .wizard__item1 {
-  width: 100%;
-  height: 100px;
   border-bottom: rgb(212, 212, 212) 1px solid;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,6 +51,7 @@ section .wizard .wizard__item1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 25px;
 }
 section .wizard .wizard__item1 progress {
   width: 100px;
@@ -82,7 +83,7 @@ section .wizard .wizard__item1 .wizard__item1__NO {
 }
 @media (max-width: 650px) {
   section .wizard .wizard__item1 .wizard__item1__NO {
-    margin-right: 1px;
+    margin-right: 5px;
   }
 }
 section .wizard .wizard__item1 .wizard__item1__Yes {
@@ -104,12 +105,11 @@ section .wizard .wizard__item1 .wizard__item1__Yes {
 }
 @media (max-width: 650px) {
   section .wizard .wizard__item1 .wizard__item1__Yes {
-    margin-right: 1px;
+    margin-right: 5px;
   }
 }
 section .wizard .wizard__form-gender {
-  width: 100%;
-  height: 382px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,7 +158,6 @@ section .wizard .wizard__form-gender .wizard__form-gender__radio-buttom .wizard_
   accent-color: black;
 }
 section .wizard .wizard__form-gender button {
-  width: 267px;
   height: 60px;
   border-radius: 40px;
   border: none;
