@@ -1,16 +1,25 @@
+:root{
+    --bg-document: #FBF3EB;
+    --bg-wizard: white;
+    --bg-items_true: #5c8e12;
+    --bg-items_false: #EFF0F6;
+    --bg-button: #EC744A;
+
+}
+
 body{
     margin: 0;
     padding: 0;
-    background-color: #FBF3EB;
+    background-color: var(--bg-document);
     height: 100dvh;
 }
 section{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 850px;
     .wizard{
-        background-color: white;
+        background-color: var(--bg-wizard);
         display: flex;
         flex-wrap: wrap;
         // width: 996px;
@@ -47,7 +56,7 @@ section{
                 justify-content: center;
                 align-items: center;
                 border-radius: 20px;
-                background-color: #EFF0F6;
+                background-color: var(--bg-items_false);
                 margin-right: 20px;
                 color: #6F6C90;
                 @media(max-width: 650px){
@@ -55,7 +64,7 @@ section{
                 }
             }
             .wizard__item1__Yes{
-                background: #769B3F;
+                background: var(--bg-items_true);
                 width: 34px;
                 height: 34px;
                 display: flex;
@@ -104,7 +113,7 @@ section{
                 height: 60px;
                 border-radius: 40px;
                 border: none;
-                background-color: #EC744A;
+                background-color: var(--bg-button);
                 font-size: 15px;
             }
                 button:active{
