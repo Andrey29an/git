@@ -1,0 +1,43 @@
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin font-size-media{
+color: $text-color;
+@media(min-width: 800px){
+font-size: $font-size-big;
+}
+@media(max-width: 800px){
+font-size: $font-size-norm;
+}
+@media(max-width: 500px){
+font-size: $font-size-small;
+}
+}
+@mixin title{
+    color: $text-color;
+    font-size: 3.5em;
+    text-align: center;
+    @media(max-width: 700px){
+        font-size: 2.8em;
+    }
+}
+@mixin buttom-section{
+background: linear-gradient(166deg, #665DCD, #5FA4E6, #D2AB67);
+border: none;
+cursor: pointer;
+padding: 10px;
+color: $text-color;
+}
