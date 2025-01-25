@@ -1,0 +1,92 @@
+@import "mixin.scss";
+@import "variables.scss";
+
+
+.header{
+    font-family: sans-serif;
+    @include flex-row;
+    background-color: #F3F8FF;
+    .logo{
+        width: 70px;
+        height : 70px;
+    }
+    .hedaer__logo_text{
+        font-size: 30px;
+        font-weight: bold;
+        @media(max-width: 550px){
+            font-size: 25px;
+        }
+
+    }
+    .space{
+        flex: 1;
+    }
+    .header__menu{
+        .header__menu__navigation{
+            outline: none;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 3px;
+            @media(max-width: 550px){
+                font-size: 10px;
+            }
+        }
+    }
+    form{
+        @include flex-center;
+        margin: 0px 125px;
+        @media(max-width: 750px){
+            margin: 0px 30px;
+        }
+        @media(max-width: 550px){
+            margin: 0px 3px;
+        }
+        button{
+            border: none;
+            padding: 10px;
+            background-color: #4335DE;
+            color: white;
+            border-radius: 30px;
+            @media(max-width: 550px){
+                font-size: 10px;
+                padding: 5px;
+            }
+        }
+    }
+}
+    .privacy{
+        width: 100%;
+        @include flex-row;
+        .privacy__content{
+            width: 50%;
+            @include flex-column;
+            h1{
+                display: flex;
+                justify-content: center;
+            }
+            p{
+                text-align: center;
+            }
+            form{
+                @include flex-row;
+                justify-content: center;
+                .button-orange{
+                    margin-right: 15px;
+                    @include button-one;
+                }
+                .button-clasik{
+                    margin-right: 15px;
+                    @include button-two;
+                }
+            }
+        }
+        .img{
+            .one-foto{
+                width: 500px;
+            }
+            .two-foto{
+                width: 200px;
+            }
+        }
+}
